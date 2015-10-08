@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <EditText
+    android:id="@+id/myEditText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="@string/addItemHint"
+    android:contentDescription="@string/addItemContentDescription"
+    android:inputType="text"
+    android:gravity="left"
+
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_toLeftOf="@+id/myEditTexDate"
+      android:layout_toStartOf="@+id/myEditTexDate" />
+  <EditText
+      android:id="@+id/myEditTexDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:hint="@string/addItemHintDate"
+      android:contentDescription="@string/addItemContentDescriptionDate"
+      android:inputType="date"
+
+      android:gravity="right"
+      android:layout_above="@+id/myListView"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true" />
+  <ListView
+    android:id="@+id/myListView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/myEditText"
+
+  />
+</RelativeLayout><!-- From: file:/C:/Users/Guarionex/Desktop/Chapter_4_To-do_List_Part_11/app/src/main/res/layout/main.xml -->
