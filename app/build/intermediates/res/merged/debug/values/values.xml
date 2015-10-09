@@ -5,6 +5,6 @@
     <string name="addItemContentDescription">New To Do Item</string>
     <string name="addItemContentDescriptionDate">Select Date</string>
     <string name="addItemHint">New To Do Item</string>
-    <string name="addItemHintDate">Double Click to Select Date</string>
+    <string name="addItemHintDate">Click to Select Date</string>
     <string name="app_name">ToDoList</string>
 </resources>

@@ -30,7 +30,8 @@ public class ToDoListActivity extends Activity {
     ListView myListView = (ListView)findViewById(R.id.myListView);
     final EditText myEditText = (EditText)findViewById(R.id.myEditText);
     final EditText dateEditText = (EditText)findViewById(R.id.myEditTexDate);
-    
+    dateEditText.setFocusableInTouchMode(false);
+
     // Create the Array List of to do items
     final ArrayList<String> todoItems = new ArrayList<String>();
    
@@ -102,8 +103,9 @@ public class ToDoListActivity extends Activity {
       @Override
       public void onClick(View v) {
         // TODO Auto-generated method stub
-        new DatePickerDialog(ToDoListActivity.this, date, myCalendar
-                .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+        new DatePickerDialog(ToDoListActivity.this, date,
+                myCalendar.get(Calendar.YEAR),
+                myCalendar.get(Calendar.MONTH),
                 myCalendar.get(Calendar.DAY_OF_MONTH)).show();
 
 
